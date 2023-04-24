@@ -1,0 +1,37 @@
+body{
+  background: url("/web/pics/bg10.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+#nav-bar{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#navbarSupportedContent
+{
+  justify-content: center;
+}
+#navbarSupportedContent li
+{
+  padding: 0 20px;
+}
+#navbarSupportedContent ul li a
+{
+  color: #000 !important;
+  background-color: #AFAEAF !important;
+}
+
+#navbarSupportedContent ul li a:hover{
+  color: #B5721C !important;
+}
+
+#drp-menu ul li a{
+  color: #000 !important;
+}
+#bottom{
+  position: static;
+}
+.card{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
