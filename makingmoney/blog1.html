@@ -12,15 +12,17 @@
     <section id="nav-bar">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-xxl">
-          <a class="navbar-brand" href="#">BLOG254</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<!--link--><span class="navbar-toggler-icon"><img src="\web\menu.png" alt="menu" height="20px" width="20px"></span>
-          </button>
+          <img src="/web/logo.png" alt="logo" height="50px">
+          <div class="cnt navbar-toggler align-items-start" data-bs-toggle="collapse" data-bs-target="#navbar-Content-2" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbar-Content-2">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active rounded" aria-current="page" href="\web\index.html">Home</a>
+      <!--link--><a class="nav-link active rounded" aria-current="page" href="\web\index.html">Home</a>
               </li>
               <div id="drp-menu">
                 <li class="nav-item dropdown">
@@ -28,8 +30,8 @@
                     My Blog
                   </a>
                     <ul class="dropdown-menu">
-                    <!--link--><li><a class="dropdown-item" href="\web\makingmoney\blog1.html">Making Money</a></li>
-                      <li><a class="dropdown-item" href="#">Personal Finance</a></li>
+                    <li><a class="dropdown-item" href="#">Making Money</a></li>
+                    <li><a class="dropdown-item" href="#">Personal Finance</a></li>
                 </li>
               </div>
             </ul>
@@ -38,7 +40,7 @@
       </nav>
     </section>
     <section id="article">
-      <div class="justify-content-center">
+      <div class="text-center">
         <p>
           <h3>How to make kids their own boss in 2023</h3>
         </p>
@@ -149,9 +151,29 @@
         </div>
       </div>
     </section>
-    <footer id="bottom" class="text-center bg-dark text-light align-content-end">
+    <footer>
+      <div class="container-fluid text-center text-light">
+        <div class="row" id="bottom">
+          <div class="col-6">
             <h4>© 2033</h4>
+          </div>
+          <div class="col-2">
+            <img src="/web/instagram.png" alt="instagram" class="img-fluid" height="50px" width="50px">
+          </div>
+          <div class="col-2">
+            <img src="/web/facebook.png" alt="facebook" class="img-fluid" height="50px" width="50px">
+          </div>
+          <div class="col-2">
+            <img src="/web/twitter.png" alt="twitter" class="img-fluid" height="50px" width="50px">
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+    </script>
   </body>
 </html>
