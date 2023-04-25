@@ -1,6 +1,18 @@
-body{
-  background: url("/web/pics/bg10.jpg") no-repeat center center fixed;
-  background-size: cover;
+@import "http://fonts.googleapis.com/css?family=Oswald:400,300,700";
+#top1
+{
+  font-family: Trebuchet MS,'sans-serif';
+  color: #D65C67;
+}
+#top2
+{
+  font-family: Trebuchet MS,'sans-serif';
+  color: #59378B;
+}
+#top3
+{
+  font-family: Trebuchet MS,'sans-serif';
+  color: #3D7778;
 }
 #nav-bar{
   position: sticky;
@@ -19,7 +31,7 @@ body{
 #navbar-Content-2 ul li a
 {
   color: #000 !important;
-  background-color: #AFAEAF !important;
+  background-color: #4475A1 !important;
 }
 
 #navbar-Content-2 ul li a:hover{
@@ -32,7 +44,27 @@ body{
 #bottom{
   position: static;
 }
-.card{
+
+#ovcon
+{
+  position: relative;
+}
+#fltopac
+{
+  color: white;
+  background-color: #D65C67;
+  opacity: 0.6;
+  position: absolute;
+  z-index: 3;
+}
+#imgov
+{
+  z-index: 2;
+  margin: 20px;
+}
+
+#shdow
+{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .cnt{
