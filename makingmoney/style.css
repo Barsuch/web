@@ -47,7 +47,18 @@
 
 #ovcon
 {
+  /*position: relative;*/
+}
+#main{
   position: relative;
+}
+#social
+{
+  padding-top: 100px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 4;
 }
 #fltopac
 {
