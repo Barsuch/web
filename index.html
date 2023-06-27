@@ -52,7 +52,7 @@
                   $.ajax(
                     { url: linkto, dataType: 'html',type: 'GET',cache: true, success: function(response) {
                         let data = jQuery(results);
-                        let imgsrc = "../web/";
+                        let imgsrc = "../web/makingmoney/";
                         imgsrc += jQuery(response).find('#mainimg').attr("src");
                         
                         data.find('#artimg').attr("src",imgsrc);
