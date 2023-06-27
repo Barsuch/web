@@ -1,5 +1,4 @@
 body{
-  background: url("/web/pics/bg6.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 #nav-bar{
@@ -18,8 +17,8 @@ body{
 }
 #navbar-Content-2 ul li a
 {
-  color: #000 !important;
-  background-color: #4475A1 !important;
+  color: #000;
+  background-color: rgb(0,176,240);
 }
 
 #navbar-Content-2 ul li a:hover{
@@ -30,7 +29,7 @@ body{
   color: #000 !important;
 }
 #bottom{
-  background-color: #4475A1;
+  background-color: rgb(0,176,240);
 }
 .card:hover {
   transform: scale(1.05);
