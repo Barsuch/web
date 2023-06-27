@@ -52,7 +52,8 @@
                   $.ajax(
                     { url: linkto, dataType: 'html',type: 'GET',cache: true, success: function(response) {
                         let data = jQuery(results);
-                        data.find('#artimg').attr("src",jQuery(response).find('#mainimg').attr("src"));
+                        let imgsrc = jQuery(response).find('#mainimg').attr("src");
+                        data.find('#artimg').attr("src",imgsrc);
                         data.find('#arttitle').text(jQuery(response).find('title').text());
                         data.find('#arttxt').text(jQuery(response).find('#sampletext').text());
                         data.find('a').attr("href",linkto);
