@@ -47,10 +47,10 @@
               //alert("nextblog");
                 //alert("called "+ number);
                 $.ajax({
-                  url: '../article.html',type: 'GET',cache: true, dataType: 'html', success: function(results) {
+                  url: '../article.html',type: 'GET',cache: true, dataType: 'jsonp', success: function(results) {
                     let linkto = "../makingmoney/blog" + number + ".html";
                   $.ajax(
-                    { url: linkto, dataType: 'html',type: 'GET',cache: true, success: function(response) {
+                    { url: linkto, dataType: 'jsonp',type: 'GET',cache: true, success: function(response) {
                         let data = jQuery(results);
                         data.find('#artimg').attr("src",jQuery(response).find('#mainimg').attr("src"));
                         data.find('#arttitle').text(jQuery(response).find('title').text());
