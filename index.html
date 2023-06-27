@@ -47,8 +47,8 @@
               //alert("nextblog");
                 //alert("called "+ number);
                 $.ajax({
-                  url: '../web/article.html',type: 'GET',cache: true, dataType: 'html', success: function(results) {
-                    let linkto = "../web/makingmoney/blog" + number + ".html";
+                  url: 'article.html',type: 'GET',cache: true, dataType: 'html', success: function(results) {
+                    let linkto = "makingmoney/blog" + number + ".html";
                   $.ajax(
                     { url: linkto, dataType: 'html',type: 'GET',cache: true, success: function(response) {
                         let data = jQuery(results);
