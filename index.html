@@ -54,7 +54,7 @@
                         let data = jQuery(results);
                         let imgsrc = "makingmoney/blog/";
                         imgsrc += jQuery(response).find('#mainimg').attr("src");
-                        alert(imgsrc);
+                        
                         data.find('#artimg').attr("src",imgsrc);
                         data.find('#arttitle').text(jQuery(response).find('title').text());
                         data.find('#arttxt').text(jQuery(response).find('#sampletext').text());
