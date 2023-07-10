@@ -55,7 +55,8 @@
                         let imgsrc = jQuery(response).find('#mainimg').attr("src");
                         
                         data.find('#artimg').attr("src",imgsrc);
-                        data.find('#arttitle').text(jQuery(response).find('title').text());
+                        var title = data.find('#top1').text() + data.find('#top2').text() + data.find('#top3').text();
+                        data.find('#arttitle').text(title);
                         data.find('#arttxt').text(jQuery(response).find('#sampletext').text());
                         data.find('a').attr("href",linkto);
                         $("#article").append(data);
@@ -83,13 +84,10 @@
             <h4>© 2023</h4>
           </div>
           <div class="col-2">
-            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://moneyonbudget.buzz/makingmoney/blog1.html" target="_blank"><img src="linkedin.png" alt="linkedin" class="img-fluid" height="50px" width="50px"></a>
+            <a href="https://instagram.com/_etkamunya_?igshid=ZDdkNTZiNTM=" target="_blank"><img src="instagram.png" alt="linkedin" class="img-fluid" height="50px" width="50px"></a>
           </div>
           <div class="col-2">
-            <a href="http://www.facebook.com/sharer.php?u=https://moneyonbudget.buzz/makingmoney/blog1.html" target="_blank"><img src="facebook.png" alt="facebook" class="img-fluid" height="50px" width="50px"></a>
-          </div>
-          <div class="col-2">
-            <a href="http://www.twitter.com/share?url=https://moneyonbudget.buzz/makingmoney/blog1.html" target="_blank"><img src="twitter.png" alt="twitter" class="img-fluid" height="50px" width="50px"></a>
+            <a href="https://www.facebook.com/edith.kamunya" target="_blank"><img src="facebook.png" alt="facebook" class="img-fluid" height="50px" width="50px"></a>
           </div>
         </div>
       </div>

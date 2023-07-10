@@ -69,13 +69,20 @@
 
           <div class="row gy-1" id="social">
             <div class="col-12">
-              <a href="https://www.facebook.com/edith.kamunya" target="_blank"><img src="../facebook.png" alt="facebook" class="img-fluid" height="30px" width="30px"></a>
+              <script>
+                $(document).ready(function()
+                {
+                  var tweet = "http://www.twitter.com/share?url=" + window.location.href;
+                  var meta = "http://www.facebook.com/sharer.php?u=" + window.location.href;
+                  $("#meta").attr("href",meta);
+                  $("#tweet").attr("href",tweet);
+                }
+                );
+              </script>
+              <a id="meta" href="" target="_blank"><img src="../facebook.png" alt="facebook" class="img-fluid" height="30px" width="30px"></a>
             </div>
           <div class="col-12">
-              <img src="../twitter.png" alt="twitter" class="img-fluid" height="30px" width="30px">
-          </div>
-          <div class="col-12">
-              <a href="https://instagram.com/_etkamunya_?igshid=ZDdkNTZiNTM=" target="_blank"><img src="../instagram.png" alt="instagram" class="img-fluid" height="30px" width="30px"></a>
+            <a id="tweet" href="" target="_blank"><img src="../twitter.png" alt="twitter" class="img-fluid" height="30px" width="30px"></a>
           </div>
         <div class="col-12">
             <img src="../pinterest.png" alt="pinterest" class="img-fluid" height="30px" width="30px">
